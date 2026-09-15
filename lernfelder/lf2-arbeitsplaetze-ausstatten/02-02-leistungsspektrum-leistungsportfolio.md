@@ -1,4 +1,4 @@
-# LF 2.2: Das IT-Leistungsportfolio – Produkte & Service-Leistungen (FIAE-Fokus)
+Das IT-Leistungsportfolio – Produkte & Service-Leistungen (FIAE-Fokus)
 
 Ein IT-Leistungsportfolio beschreibt die Gesamtheit aller Produkte, Software-Lösungen und Dienstleistungen, die ein IT-Unternehmen oder eine interne Entwicklungsabteilung für Kunden oder Fachbereiche bereitstellt. Für Anwendungsentwickler bildet das Verständnis des Leistungsportfolios die Grundlage, um Kundenanforderungen in passende Software-Architekturen zu übersetzen, Entwicklungsumgebungen bereitzustellen und den gesamten Software-Lebenszyklus kaufmännisch wie technisch abzubilden.
 
