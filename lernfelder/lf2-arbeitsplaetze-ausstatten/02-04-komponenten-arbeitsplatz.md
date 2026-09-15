@@ -1,4 +1,4 @@
-LF 2.4: Komponenten eines Arbeitsplatzcomputers (FIAE-Fokus)
+Komponenten eines Arbeitsplatzcomputers (FIAE-Fokus)
 
 Ein Entwickler-Arbeitsplatz ist ein komplexes Gesamtsystem aus aufeinander abgestimmten Hardware- und Peripherie-Komponenten. Für Anwendungsentwickler ist das detaillierte Verständnis der Hardware-Komponenten entscheidend, um Build- und Laufzeit-Engpässe zu vermeiden, Multi-Container-Umgebungen effizient zu betreiben und barrierefreie Benutzeroberflächen (Accessibility/BITV) zu gestalten.
 
