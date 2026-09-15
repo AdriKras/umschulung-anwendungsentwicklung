@@ -67,12 +67,12 @@ Analoger Schall (Mikrofon) -> ADC -> Digitale Verarbeitung (DSP) -> DAC -> Analo
 
 ## 4. Eingabegeräte, Druck- & Scanner-Technologien
 
-### Tastatur-Techniken & Ergonomie (K2)
+### Tastatur-Techniken & Ergonomie 
 * **Membran / Rubberdome:** Günstig, leise, aber schwammiger Druckpunkt und kürzere Lebensdauer.
 * **Mechanisch (Switches):** Präziser Druckpunkt, haptisches Feedback, sehr hohe Langlebigkeit.
 * **Ergonomische Alternativen:** Geteilte Tastaturfelder (Split Keyboards) und vertikale Mäuse zur Vorbeugung von RSI (Repetitive Strain Injury / "Mausarm").
 
-### Druck- & Scanner-Technologien (K2)
+### Druck- & Scanner-Technologien 
 * **Laserdrucker:** Erhitzen von Toner via Fixiereinheit. Schnell, dokumentenecht, geringe Seitenpreise.
 * **Tintenstrahldrucker:** Tröpfchenauswurf (Piezo/Thermatisch). Hohe Auflösung für Fotodruck, aber Gefahr verstopfter Düsen.
 * **Nadeldrucker:** Mechanischer Durchschlag via Farbband. Unverzichtbar für Durchschreibesätze und Formulare.
@@ -80,9 +80,9 @@ Analoger Schall (Mikrofon) -> ADC -> Digitale Verarbeitung (DSP) -> DAC -> Analo
 
 ---
 
-## 5. Drahtlose Technologien (Wireless) (K2, K4)
+## 5. Drahtlose Technologien (Wireless) 
 
-### WLAN-Frequenzen & Physikalische Eigenschaften (K2)
+### WLAN-Frequenzen & Physikalische Eigenschaften 
 
 | Frequenzband | Reichweite | Wanddurchdringung | Max. Bandbreite | Störungsanfälligkeit |
 | :--- | :--- | :--- | :--- | :--- |
@@ -90,18 +90,18 @@ Analoger Schall (Mikrofon) -> ADC -> Digitale Verarbeitung (DSP) -> DAC -> Analo
 | **5 GHz** | Mittel (~15m) | Mittel | Hoch | Gering (DFS-Kanalwahl) |
 | **6 GHz (Wi-Fi 6E/7)** | Kurz (~10m) | Schwach | Extrem hoch | Minimal (Keine Überlappung) |
 
-### Funkstrategien: MIMO & Beamforming (K2, K4)
+### Funkstrategien: MIMO & Beamforming 
 * **MIMO (Multiple-Input Multiple-Output):** Parallele Nutzung mehrerer Sende- und Empfangsantennen zur Vervielfachung der Datenrate.
 * **Beamforming:** Gezielte Signalformung in Richtung der Empfangsgeräte statt ungerichteter kreisförmiger Abstrahlung.
-* **Störungsfreie Strategie (K4):** Ausleuchtungsmessung (Site Survey), Trennung von 2,4-GHz-Legacy-Geräten und 5/6-GHz-Dev-Workstations, Nutzung überschneidungsfreier Kanäle (1, 6, 11 bei 2,4 GHz).
+* **Störungsfreie Strategie :** Ausleuchtungsmessung (Site Survey), Trennung von 2,4-GHz-Legacy-Geräten und 5/6-GHz-Dev-Workstations, Nutzung überschneidungsfreier Kanäle (1, 6, 11 bei 2,4 GHz).
 
-### Bluetooth-Historie & Funktionsweise (K2)
+### Bluetooth-Historie & Funktionsweise 
 * **FHSS (Frequency-Hopping Spread Spectrum):** Wechselt 1.600-mal pro Sekunde die Frequenz im 2,4-GHz-Band zur Störungsvermeidung.
 * **Profile:** HID (Human Interface Device für Tastatur/Maus), A2DP (Audio-Streaming), HFP (Freisprechen).
 
 ---
 
-## 6. Arbeitsplatzkonzeption, Ergonomie & Verkabelung (K5)
+## 6. Arbeitsplatzkonzeption, Ergonomie & Verkabelung 
 
 ### Arbeitsstättenverordnung (ArbStättV) & Konzeption
 * **Bildschirm:** Reflexions- und blendfrei, leicht neigbar und höhenverstellbar.
@@ -114,19 +114,19 @@ Analoger Schall (Mikrofon) -> ADC -> Digitale Verarbeitung (DSP) -> DAC -> Analo
 
 ---
 
-## 7. Inklusion, Barrierefreiheit & Normen (K1, K3, K5, K6)
+## 7. Inklusion, Barrierefreiheit & Normen 
 
-### Das Zwei-Sinne-Prinzip (K3, K5)
+### Das Zwei-Sinne-Prinzip 
 Informationen müssen für Anwender über mindestens zwei der drei Sinne (Sehen, Hören, Tasten) wahrgenommen werden können:
 * **Sehen + Hören:** Visuelle Systemwarnungen in der GUI müssen gleichzeitig mit akustischen Signaltönen hinterlegt sein.
 * **Sehen + Tasten:** Software-Bedienelemente müssen vollständig per Tastatur/Braille-Zeile bedienbar sein.
 * **Hören + Sehen:** Audioinhalte benötigen Untertitel.
 
-### Barrierefreie MFPs & Software (K1, K5)
+### Barrierefreie MFPs & Software 
 * **MFP-Kriterien:** Höhenverstellbares Touchscreen-Bedienfeld, kontrastreiche Tasten, Sprachführung.
 * **Software-Inklusion (BITV / WCAG):** ARIA-Attribute im HTML-Frontend, Screenreader-Kompatibilität, High-Contrast-Modi.
 
-### Umwelt- & Qualitätsnormen (K1, K6)
+### Umwelt- & Qualitätsnormen 
 * **Blauer Engel:** Deutsches Umweltzeichen für geringen Energieverbrauch, Feinstaub-Armut (Drucker) und Recyclingfähigkeit.
 * **TCO Certified:** Internationales Prüfsiegel für Ökologie, Ergonomie und Schadstoffarmut bei Monitoren und IT-Geräten.
 * **GS-Zeichen & ISO 9241-400:** Gesetzlicher Nachweis für geprüfte Sicherheit und Ergonomie von Mensch-System-Eingabegeräten.
