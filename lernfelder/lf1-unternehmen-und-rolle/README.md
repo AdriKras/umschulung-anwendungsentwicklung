@@ -3,7 +3,7 @@ In diesem Lernfeld geht es darum, die IT-Evolution, rechtliche Rahmenbedingungen
 
 ---
 
-## 🏆 Kernkompetenzen (Groblernziele)
+## Kernkompetenzen (Groblernziele)
 
 * **Identität:** Die Evolution der IT (von Zuse/Röhrenrechnern bis hin zu moderner KI und Cloud-Computing) sowie die Abgrenzung der 4 IT-Fachrichtungen (AE, SI, DP, DV) verstehen.
 * **Bildung:** Das Duale System optimal nutzen und Karrierewege (lebenslanges Lernen, Fachzertifikate, Spezialisierung in der Softwareentwicklung) planen.
