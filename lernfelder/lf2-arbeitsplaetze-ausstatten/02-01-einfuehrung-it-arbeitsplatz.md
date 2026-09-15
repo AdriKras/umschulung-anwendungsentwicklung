@@ -1,10 +1,10 @@
-# LF 2.1: Die Logik der Maschine & Hardware-Grundlagen (FIAE-Fokus)
+Die Logik der Maschine & Hardware-Grundlagen 
 
 In diesem Themenbereich werden die mathematischen, logischen und architektonischen Grundlagen von Computersystemen behandelt. Für Anwendungsentwickler bildet dieses Wissen das Fundament für datentypsicheres Programmieren, Bit-Operationen, Speicherverwaltung und die systemnahe Optimierung von Algorithmen.
 
 ---
 
-## 1. Zahlensysteme & Speichergrößen in der Anwendungsentwicklung
+## 1. Zahlensysteme & Speichergrößen 
 
 ### Zahlensysteme (Dezimal, Dual, Hexadezimal)
 
