@@ -5,15 +5,7 @@ In diesem Lernfeld geht es um die Konzeption, Dimensionierung und kaufmännische
 
 ---
 
-## Kernkompetenzen (Bloom K4 - K6)
-
-* **Analysieren (K4):** Identifikation von Hardware-Flaschenhälsen bei der Softwareentwicklung (RAM-Engpässe bei IDEs/Containern, I/O-Bottlenecks), Legacy-Sicherheitsrisiken und Ergonomie-Faktoren am Entwickler-Arbeitsplatz.
-* **Entwerfen & Konstruieren (K5):** Konzeption von Entwickler-Infrastrukturen (z. B. Docker-Workstations, Multi-Monitor-Setups), Erstellung technischer Pflichtenhefte und Übersetzen von Kundenwünschen in agile User Stories.
-* **Bewerten & Entscheiden (K6):** Strategische Bewertung von Systeminvestitionen mittels Nutzwertanalyse, Total Cost of Ownership (TCO) für Entwickler-Hardware sowie kaufmännische Handelskalkulation zur Sicherung der Projektrendite.
-
----
-
-## Die Lern-Reise (Überblick der Epics)
+## Überblick der Epics
 
 ### LF2.1: Die Logik der Maschine
 * **Fokus:** Zahlensysteme (Binär, Hexadezimal), Logikgatter und Von-Neumann-Architektur.
