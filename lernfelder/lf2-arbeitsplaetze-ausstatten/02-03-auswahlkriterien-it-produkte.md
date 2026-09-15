@@ -1,4 +1,4 @@
-# LF 2.3: Auswahlkriterien für IT-Produkte (FIAE-Fokus)
+Auswahlkriterien für IT-Produkte (FIAE-Fokus)
 
 Bei der Auswahl von IT-Produkten (Hardware, Software-Lizenzen, Cloud-Services) im Entwicklungsumfeld reichen Kaufpreis und Markennamen nicht aus. Entwickler benötigen Systeme, die stabil unter hohen Lasten arbeiten, sich nahtlos in bestehende Toolchains integrieren und den gesetzlichen sowie wirtschaftlichen Rahmenbedingungen entsprechen.
 
