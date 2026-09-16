@@ -1,5 +1,3 @@
-Guten Morgen! Hier ist der komplette Text als sauber formatierter Fließtext. Du kannst ihn direkt kopieren und in deine docker/README.md einfügen.
-
 Docker
 In diesem Bereich sammle ich Grundlagen und praktische Notizen zu Docker. Docker ist eine Plattform, mit der Anwendungen in Containern ausgeführt werden können. Ein Container enthält alles, was eine Anwendung zum Starten braucht: Programmdateien, Abhängigkeiten, Konfigurationen und eine passende Laufzeitumgebung. Für Fachinformatiker für Anwendungsentwicklung (FIAE) ist Docker wichtig, weil Container häufig für lokale Entwicklungsumgebungen, Microservices, Datenbank-Containerisierung, automatisierte Testumgebungen und einfache Deployments genutzt werden.
 
