@@ -1,3 +1,337 @@
 # Docker & Containerisierung
 
-In diesem Ordner werden Dockerfiles, Docker-Compose-Confs und Skripte zur Containerisierung gesammelt.
+Docker
+In diesem Bereich sammle ich Grundlagen und praktische Notizen zu Docker.
+
+Docker ist eine Plattform, mit der Anwendungen in Containern ausgeführt werden können. Ein Container enthält alles, was eine Anwendung zum Starten braucht: Programmdateien, Abhängigkeiten, Konfigurationen und eine passende Laufzeitumgebung.
+
+Für Fachinformatiker für Systemintegration ist Docker wichtig, weil Container häufig für Testumgebungen, Webdienste, Datenbanken, lokale Labs, Entwicklungssysteme und einfache Deployments genutzt werden.
+
+Ziel dieses Bereichs
+Dieser Bereich erklärt Docker Schritt für Schritt und praxisnah.
+
+Es geht nicht nur darum, einzelne Docker-Befehle auswendig zu lernen. Wichtig ist zu verstehen, wie Images, Container, Volumes, Netzwerke und Docker Compose zusammenhängen.
+
+Der Fokus liegt auf:
+
+Docker-Grundlagen verstehen
+Images und Container unterscheiden
+Container starten, stoppen und löschen
+Logs lesen und Fehler finden
+Volumes für dauerhafte Daten nutzen
+Docker-Netzwerke verstehen
+Docker Compose verwenden
+einfache Testumgebungen aufbauen
+typische Fehler erkennen
+Docker im FISI-Alltag einordnen
+Kapitelübersicht
+Kapitel	Thema
+1	Docker-Grundlagen
+2	Images und Container
+3	Volumes und Netzwerke
+4	Docker Compose
+5	Logs, Exec und Troubleshooting
+6	Docker in der FISI-Praxis
+Was ist Docker?
+Docker ist ein Werkzeug, um Anwendungen in Containern auszuführen.
+
+Ein Container ist eine isolierte Umgebung für eine Anwendung.
+
+Beispiel:
+
+Eine Webanwendung braucht vielleicht:
+
+einen Webserver
+bestimmte Bibliotheken
+eine bestimmte Laufzeitumgebung
+Konfigurationsdateien
+Netzwerkzugriff
+eventuell eine Datenbank
+Mit Docker kann diese Umgebung kontrollierter bereitgestellt werden.
+
+Dadurch läuft eine Anwendung auf verschiedenen Systemen oft gleich oder zumindest sehr ähnlich.
+
+Warum Docker genutzt wird
+Docker wird genutzt, weil es viele typische IT-Probleme vereinfacht.
+
+Ohne Docker kann es passieren:
+
+Auf meinem Rechner funktioniert es.
+Auf dem anderen Rechner funktioniert es nicht.
+Gründe können sein:
+
+andere Programmversionen
+fehlende Abhängigkeiten
+andere Betriebssystemumgebung
+falsche Konfiguration
+unterschiedliche Ports
+fehlende Dienste
+unterschiedliche Datenbankversionen
+Mit Docker beschreibt man die Umgebung genauer.
+
+Dadurch wird ein Projekt leichter startbar, testbar und dokumentierbar.
+
+Wichtige Docker-Begriffe
+Begriff	Bedeutung
+Image	Vorlage für einen Container
+Container	laufende oder gestoppte Instanz eines Images
+Dockerfile	Bauanleitung für ein eigenes Image
+Volume	dauerhafter Speicher für Containerdaten
+Network	Netzwerk für Containerkommunikation
+Port Mapping	Verbindung zwischen Host-Port und Container-Port
+Docker Compose	Verwaltung mehrerer Container über eine YAML-Datei
+Registry	Speicherort für Images, zum Beispiel Docker Hub
+Kurz gesagt:
+
+Image = Vorlage
+Container = gestartete Instanz
+Volume = dauerhafte Daten
+Network = Verbindung
+Compose = mehrere Container gemeinsam verwalten
+Image und Container
+Ein häufiger Anfängerfehler ist die Verwechslung von Image und Container.
+
+Begriff	Vergleich
+Image	wie eine Installationsvorlage
+Container	wie ein gestartetes Programm aus dieser Vorlage
+Beispiel:
+
+docker pull nginx
+docker run -d --name web -p 8080:80 nginx
+Dabei ist nginx das Image.
+
+Der Container web ist die laufende Instanz daraus.
+
+Ein Image kann für viele Container verwendet werden.
+
+Docker im Vergleich zu virtuellen Maschinen
+Docker-Container sind nicht dasselbe wie virtuelle Maschinen.
+
+Bereich	Container	Virtuelle Maschine
+Betriebssystem	nutzt Kernel des Hosts mit	eigenes Gastbetriebssystem
+Startzeit	meist sehr schnell	langsamer
+Ressourcenverbrauch	eher gering	höher
+Isolation	prozessbasiert	stärker getrennt
+Nutzung	Apps, Dienste, Testumgebungen	komplette Systeme, Labore, Server
+Verwaltung	Images, Container, Compose	VM-Images, Hypervisor
+Container ersetzen virtuelle Maschinen nicht vollständig.
+
+Beide haben ihren Platz.
+
+Für viele Dienste und Testumgebungen ist Docker sehr praktisch. Für komplette Betriebssystem-Labs sind virtuelle Maschinen oft besser geeignet.
+
+Typische Docker-Einsatzbereiche
+Docker wird häufig genutzt für:
+
+Webserver
+Datenbanken
+lokale Testumgebungen
+Entwicklungsumgebungen
+kleine Dienste
+APIs
+Admin-Tools
+Monitoring-Tools
+Schul- und Lernprojekte
+Home-Lab-Setups
+CI/CD-Pipelines
+einfache Deployments
+Beispiele:
+
+nginx als Webserver
+PostgreSQL als Datenbank
+Adminer als Datenbank-GUI
+Python-App als Container
+Testumgebung mit Docker Compose
+Docker und Linux
+Docker läuft sehr stark im Linux-Umfeld.
+
+Viele Docker-Grundlagen hängen mit Linux zusammen:
+
+Prozesse
+Dateisystem
+Rechte
+Netzwerke
+Ports
+Logs
+Benutzer
+Dienste
+Mounts
+Ressourcen
+Deshalb ist Linux-Wissen für Docker sehr hilfreich.
+
+Wer Linux-Grundlagen versteht, versteht Docker deutlich leichter.
+
+Docker und Git
+Docker-Projekte werden oft mit Git versioniert.
+
+Typische Dateien in einem Docker-Projekt:
+
+Dockerfile
+docker-compose.yml
+README.md
+.env.example
+scripts/
+configs/
+Nicht ins öffentliche Repository gehören meistens:
+
+.env
+echte Passwörter
+private Schlüssel
+lokale Datenbankdaten
+große Dumps
+private Logs
+Eine passende .gitignore ist deshalb wichtig.
+
+Docker und Docker Compose
+Ein einzelner Container kann mit docker run gestartet werden.
+
+Mehrere zusammengehörende Container verwaltet man oft mit Docker Compose.
+
+Beispiel:
+
+Webanwendung + Datenbank + Admin-Tool
+Mit Docker Compose beschreibt man diese Services in einer Datei:
+
+docker-compose.yml
+Dann kann man alles gemeinsam starten:
+
+docker compose up -d
+und stoppen:
+
+docker compose down
+Docker Compose ist besonders praktisch für kleine Labore und Lernprojekte.
+
+Typische Docker-Befehle
+Befehl	Bedeutung
+docker ps	zeigt laufende Container
+docker ps -a	zeigt alle Container
+docker images	zeigt lokale Images
+docker run	startet neuen Container
+docker stop	stoppt Container
+docker start	startet gestoppten Container
+docker restart	startet Container neu
+docker rm	löscht Container
+docker rmi	löscht Image
+docker logs	zeigt Container-Logs
+docker exec -it	führt Befehl im Container aus
+docker inspect	zeigt technische Details
+docker compose up -d	startet Compose-Projekt
+docker compose down	stoppt Compose-Projekt
+Beispiel: einfacher nginx-Container
+Ein einfacher Webserver kann so gestartet werden:
+
+docker run -d --name web -p 8080:80 nginx
+Bedeutung:
+
+Teil	Bedeutung
+docker run	neuen Container starten
+-d	im Hintergrund laufen lassen
+--name web	Containername
+-p 8080:80	Host-Port 8080 auf Container-Port 80
+nginx	verwendetes Image
+Prüfen:
+
+docker ps
+docker logs web
+docker port web
+Im Browser:
+
+http://localhost:8080
+Container stoppen und löschen:
+
+docker stop web
+docker rm web
+Warum Volumes wichtig sind
+Container selbst sind nicht als dauerhafter Speicher gedacht.
+
+Wenn ein Container gelöscht wird, können Daten im Container verloren gehen.
+
+Für dauerhafte Daten nutzt man Volumes.
+
+Typische Beispiele:
+
+Datenbankdaten
+Uploads
+Konfigurationsdaten
+persistente Anwendungsdaten
+Beispiel:
+
+docker volume create db_data
+Volume anzeigen:
+
+docker volume ls
+Container mit Volume:
+
+docker run -d --name db -v db_data:/var/lib/postgresql/data postgres
+Warum Netzwerke wichtig sind
+Container müssen oft miteinander kommunizieren.
+
+Beispiel:
+
+Web-App -> Datenbank
+Adminer -> PostgreSQL
+Frontend -> Backend
+Docker kann eigene Netzwerke erstellen.
+
+Befehle:
+
+docker network ls
+docker network create appnet
+docker network inspect appnet
+In Docker Compose bekommen Services oft automatisch ein gemeinsames Netzwerk.
+
+Dann können sie sich über Servicenamen erreichen.
+
+Docker und Sicherheit
+Docker ist praktisch, aber nicht automatisch sicher.
+
+Wichtige Punkte:
+
+keine echten Passwörter ins Repository
+keine privaten Schlüssel ins Image kopieren
+Images aus vertrauenswürdigen Quellen nutzen
+Container nicht unnötig mit Root-Rechten betreiben
+nur benötigte Ports veröffentlichen
+Volumes bewusst nutzen
+Container regelmäßig aktualisieren
+Logs prüfen
+.env nicht öffentlich committen
+Docker erleichtert Betrieb und Tests, ersetzt aber keine Sicherheitsprüfung.
+
+Typische Fehler beim Lernen
+Fehler	Problem
+Image und Container verwechseln	falsche Befehle werden genutzt
+Container löschen und Daten verlieren	Daten waren nicht in einem Volume
+Port falsch mappen	Dienst ist nicht erreichbar
+Logs nicht lesen	Ursache bleibt unbekannt
+Containername falsch schreiben	Befehl wirkt nicht
+docker compose down -v blind nutzen	Volumes werden gelöscht
+.env committen	Zugangsdaten können veröffentlicht werden
+Compose-Datei ändern, aber nicht neu starten	alte Konfiguration läuft weiter
+zu viele alte Container/Images behalten	System wird unübersichtlich
+Docker als VM-Ersatz missverstehen	falsche Erwartungen entstehen
+FISI-Bezug
+Für Fachinformatiker für Systemintegration ist Docker nützlich, weil viele praktische IT-Situationen damit schnell aufgebaut werden können.
+
+In der Praxis bedeutet das:
+
+Testumgebungen starten
+Datenbanken lokal bereitstellen
+Webserver ausprobieren
+Dienste isoliert testen
+Logs analysieren
+Ports und Netzwerke prüfen
+Konfigurationen dokumentieren
+kleine Labore aufbauen
+Deployments besser verstehen
+Grundlagen für DevOps lernen
+Docker verbindet viele Themen aus der Systemintegration: Linux, Netzwerk, Dienste, Sicherheit, Dokumentation, Automatisierung und Git.
+
+Kurze Zusammenfassung
+Docker ist ein Werkzeug, um Anwendungen in Containern auszuführen.
+
+Ein Image ist die Vorlage. Ein Container ist die gestartete Instanz. Volumes speichern Daten dauerhaft. Netzwerke verbinden Container. Docker Compose verwaltet mehrere Container gemeinsam.
+
+Wichtige Befehle sind docker ps, docker images, docker run, docker stop, docker rm, docker logs, docker exec, docker inspect, docker volume ls, docker network ls, docker compose up -d und docker compose down.
+
+Für FISI ist Docker wichtig, weil Container häufig für Testumgebungen, Datenbanken, Webdienste, Home-Labs und DevOps-Grundlagen genutzt werden.
