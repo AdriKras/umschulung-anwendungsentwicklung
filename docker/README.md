@@ -1,26 +1,25 @@
-'In diesem Bereich sammle ich Grundlagen und praktische Notizen zu Docker.' \
-'Docker ist eine Plattform, mit der Anwendungen in Containern ausgeführt werden können. Ein Container enthält alles, was eine Anwendung zum Starten braucht: Programmdateien, Abhängigkeiten, Konfigurationen und eine passende Laufzeitumgebung.' \
-'Für Fachinformatiker für Anwendungsentwicklung (FIAE) ist Docker wichtig, weil Container häufig für lokale Entwicklungsumgebungen, Microservices, Datenbank-Containerisierung, automatisierte Testumgebungen und einfache Deployments genutzt werden.' \
-'' \
-'## Ziel dieses Bereichs' \
-'' \
-'Dieser Bereich erklärt Docker Schritt für Schritt und praxisnah.' \
-'Es geht nicht nur darum, einzelne Docker-Befehle auswendig zu lernen. Wichtig ist zu verstehen, wie Images, Container, Volumes, Netzwerke und Docker Compose zusammenhängen.' \
-'' \
-'Der Fokus liegt auf:' \
-'* Docker-Grundlagen verstehen' \
-'* Images und Container unterscheiden' \
-'* Container starten, stoppen und löschen' \
-'* Logs lesen und Fehler finden' \
-'* Volumes für dauerhafte Daten nutzen' \
-'* Docker-Netzwerke verstehen' \
-'* Docker Compose verwenden' \
-'* einfache Testumgebungen aufbauen' \
-'* typische Fehler erkennen' \
-'* Docker im FIAE-Alltag einordnen' \
-'' \
-'## Kapitelübersicht' \
-'' \
+In diesem Bereich sammle ich Grundlagen und praktische Notizen zu Docker. 
+Docker ist eine Plattform, mit der Anwendungen in Containern ausgeführt werden können. Ein Container enthält alles, was eine Anwendung zum Starten braucht: Programmdateien, Abhängigkeiten, Konfigurationen und eine passende Laufzeitumgebung.
+Für Fachinformatiker für Anwendungsentwicklung (FIAE) ist Docker wichtig, weil Container häufig für lokale Entwicklungsumgebungen, Microservices, Datenbank-Containerisierung, automatisierte Testumgebungen und einfache Deployments genutzt werden.
+
+## Ziel dieses Bereichs
+
+Dieser Bereich erklärt Docker Schritt für Schritt und praxisnah.
+Es geht nicht nur darum, einzelne Docker-Befehle auswendig zu lernen. Wichtig ist zu verstehen, wie Images, Container, Volumes, Netzwerke und Docker Compose zusammenhängen.' \
+
+Der Fokus liegt auf
+- Docker-Grundlagen verstehen
+- Images und Container unterscheiden
+- Container starten, stoppen und löschen
+- Logs lesen und Fehler finden
+- Volumes für dauerhafte Daten nutzen
+- Docker-Netzwerke verstehen 
+- Docker Compose verwenden
+- einfache Testumgebungen aufbauen
+- typische Fehler erkennen' 
+- Docker im FIAE-Alltag einordnen'
+## Kapitelübersicht 
+
 '| Kapitel | Thema |' \
 '| :---: | :--- |' \
 '| **1** | Docker-Grundlagen |' \
