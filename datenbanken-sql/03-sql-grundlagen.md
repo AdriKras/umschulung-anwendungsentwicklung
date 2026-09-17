@@ -4,7 +4,7 @@ In diesem Kapitel geht es um die Grundlagen von SQL (Structured Query Language) 
 
 SQL ist die universelle Schnittstelle zwischen Anwendungscode und relationalen Datenbanken. Egal ob in Python, JavaScript, Java oder C# – im Hintergrund kommuniziert das Backend über SQL-Statements mit dem Datenbankserver, um Daten abzufragen, zu manipulieren oder Schemas zu verwalten.
 
-Für Fachinformatiker für Anwendungsentwicklung (FIAE) ist das sichere Beherrschen von SQL essenziell, um performante Queries zu verfassen, Geschäftslogik auf Datenbankebene abzusichern und Sicherheitslücken wie SQL-Injections zu verhindern.
+Für Anwendungsentwicker (FIAE) ist das sichere Beherrschen von SQL essenziell, um performante Queries zu verfassen, Geschäftslogik auf Datenbankebene abzusichern und Sicherheitslücken wie SQL-Injections zu verhindern.
 
 ---
 
@@ -165,7 +165,8 @@ Eine der gefährlichsten Sicherheitslücken in der Softwareentwicklung ist die *
 query = "SELECT * FROM users WHERE username = '" + user_input + "'"
 ```
 Gibt ein Angreifer als `user_input` den String `' OR '1'='1` ein, lautet die Query:
-`SELECT * FROM users WHERE username = '' OR '1'='1';` $ightarrow$ Der Angreifer umgeht das Login und erhält Zugriff auf alle Konten!
+`SELECT * FROM users WHERE username = '' OR '1'='1';` $
+ightarrow$ Der Angreifer umgeht das Login und erhält Zugriff auf alle Konten!
 
 **Sicherer Code (Prepared Statements / Parameterized Queries):**
 ```python
