@@ -1,7 +1,5 @@
 # Python Projekte
 
-In diesem Ordner werden Python-Skripte. 
+Ich werde hier allgemeine Python CheatSheets hochladen und dann verschiedene Projekte, welche ich versuche selbst zu erstellen. 
 
-Das Würfelspiel war die Haupt Python Aufgabe zum verstehen der Grundlagen in Python.
-
-Außerdem lade ich hier auch Scripte hoch, die ich in der Freizeit mit/ ohne KI erstellt habe
+Um ein Basic Wissen  aufzu bauen, erstelle ich mir erstmal ein Cheatsheet.
