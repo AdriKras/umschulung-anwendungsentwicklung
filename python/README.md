@@ -30,5 +30,18 @@ Aufgabe 1:
   **wenn** der Text erscheint,  
   **dann** soll er übersichtlich formatiert und kein rohes Datenobjekt sein.
 
+  Als Spieler\*in
+
+möchte ich, dass meine Daten zum aktuellen Spiel beim Beenden gelöscht werden,
+
+damit ich beim Neustart eine “frische” Runde spielen kann.
+
+3. Aufgabe
+
+- **gegeben** ich habe 50x gewürfelt,  
+  **wenn** ich das Würfelspiel beende,  
+  **dann** müssen alle Zähler wieder auf 0 stehen  
+  **und** es darf keine Speicherung des Spiels erfolgt sein.
+
 Beim Spaßprogramieren habe ich die self Variable das erste mal angewendet. 
 Damit versuche ich dann bis zum Ende meiner Umschulung ein kleines Spiel zu entwickeln.
