@@ -11,3 +11,4 @@ while True:
         liste.append(wuefel)
     print(liste)
 # print("Sie haben liste[x] geworfen")
+
