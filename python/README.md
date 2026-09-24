@@ -1,5 +1,9 @@
 # Python Projekte
 
-Ich werde hier allgemeine Python CheatSheets hochladen und dann verschiedene Projekte, welche ich versuche selbst zu erstellen. 
+Ich werde hier mein erstes Projekt hochladen. 
+Ich werde mein Würfespiel hier step by step hochladen. 
 
-Um ein Basic Wissen  aufzu bauen, erstelle ich mir erstmal ein Cheatsheet.
+Ziel mit dem Würfelspiel wird es sein, ein Grundwissen in Python aufzubauen, wie ein Quelltext aufgebaut ist und wie
+man alles übersichtlich entwickelt. 
+
+
