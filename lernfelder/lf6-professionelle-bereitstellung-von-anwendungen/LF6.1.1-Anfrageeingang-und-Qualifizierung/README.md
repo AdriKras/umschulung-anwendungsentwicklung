@@ -1,8 +1,17 @@
 # LF 6.1.1 – Anfrageeingang und Qualifizierung
+
 *Quelle & Grundlagen: IT-Handbuch für Fachinformatiker*innen (Sascha Kersken, Rheinwerk Verlag)*
 
+---
 
-## Kernkonzepte (Kersken Basis)
+## 🎯 Lernziele
+* Unterscheidung zwischen **Störung (Incident)** und **Serviceanfrage (Service Request)**.
+* Zielgerichtete **Qualifizierung** von Meldungen mittels W-Fragen.
+* Korrekte **Priorisierung** anhand von Auswirkung (*Impact*) und Dringlichkeit (*Urgency*).
+
+---
+
+## 🧠 Kernkonzepte (Kersken Basis)
 
 ### 1. Störung vs. Serviceanfrage (ITIL)
 * **Störung (Incident):** Ungeplante Unterbrechung oder Qualitätsminderung eines IT-Services (*"Die App stürzt beim Klick auf Speichern ab"*). 
@@ -30,26 +39,17 @@ Damit ein Ticket bzw. Bug-Report verarbeitet werden kann, müssen beim Anfrageei
 
 ---
 
-## Relevanz für die Anwendungsentwicklung (FIAE)
+## 💻 Relevanz für die Anwendungsentwicklung (FIAE)
 
-Warum ist Anfrageeingang und Qualifizierung für Softwareentwickler*innen wichtig?
-
-1. **Bug-Reporting & Reproduzierbarkeit:**
-   * Unvollständige Tickets (*"Das Programm geht nicht"*) kosten wertvolle Entwicklungszeit. Qualifizierte W-Fragen liefern **Logs, Screenshots, Schritte zur Reproduktion** und die exakte **Laufzeitumgebung**.
-
-2. **Fehler-Klassifizierung vs. Feature-Request:**
-   * Ein unerwartetes Verhalten kann ein **Bug (Störung)** sein oder eine **unvollständige Anforderung (Service Request / Feature Request)**. Entwickler müssen dies unterscheiden, um Aufwände und Sprints richtig zu planen.
-
-3. **Einhaltung von Critical-Bug-SLAs (DevOps & Support):**
-   * Produktionskritische Fehler (z. B. Absturz der Checkout-Seite eines Online-Shops) unterliegen strengen SLA-Lösungszeiten. Entwickler müssen die Priorisierung verstehen, um **Hotfixes direkt freizugeben**, während kleine Schönheitsfehler im normalen Backlog verbleiben.
-
-4. **Feedback für die Software-Architektur:**
-   * Häufen sich Incident-Tickets in einer bestimmten Kategorie (z. B. *Datenbank-Timeouts*), ist das für Entwickler das Signal für ein tieferliegendes Architektur-Problem (Refactoring-Bedarf).
+1. **Bug-Reporting & Reproduzierbarkeit:** Unvollständige Tickets kosten Zeit. Qualifizierte W-Fragen liefern Logs, Screenshots und Umgebungsinfos.
+2. **Fehler vs. Feature-Request:** Entwickler müssen unterscheiden, ob es ein Bug (Störung) oder ein neues Feature ist.
+3. **Einhaltung von Critical-Bug-SLAs:** Produktionskritische Fehler benötigen sofortige Hotfixes.
+4. **Feedback für die Software-Architektur:** Häufige Incidents in einem Bereich zeigen Refactoring-Bedarf auf.
 
 ---
 
-## Typische Fallstricke in der Praxis
+## ⚠️ Typische Fallstricke in der Praxis
 
-* **Versteckte Feature-Wünsche:** Nutzer melden fehlende Funktionen oft als *"Fehler/Störung"*, um eine schnellere Bearbeitung zu erzwingen.
-* **Zuruf-Entwicklung vermeiden:** Code-Änderungen auf Zuruf im Flur am Ticket-System vorbei führen zu ungetesteten Versionen, fehlender Dokumentation und unklaren Code-Releases.
-* **Prioritäten-Konflikt:** Die Bitte von Führungskräften um kleine Anpassungen darf nicht die Behebung kritischer Systemausfälle in der Produktion blockieren.
+* **Versteckte Feature-Wünsche:** Anfragen als Fehler tarnen, um Bearbeitung zu beschleunigen.
+* **Zuruf-Entwicklung vermeiden:** Änderungen am Ticket-System vorbei führen zu ungetesteten Versionen.
+* **Prioritäten-Konflikt:** Wünsche von Führungskräften dürfen kritische Ausfälle nicht blockieren.
