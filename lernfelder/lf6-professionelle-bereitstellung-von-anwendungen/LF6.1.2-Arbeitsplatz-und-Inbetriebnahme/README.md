@@ -51,12 +51,3 @@ Die Gestaltung von Bildschirmarbeitsplätzen ist in der Arbeitsstättenverordnun
 * **Einhaltung von Arbeitsschutzstandards:** Eigenständige und rechtssichere Einrichtung des Entwicklungsarbeitsplatzes (Höhenverstellbarkeit, Lichtverhältnisse, Ergonomie für langes Codieren).
 * **Betriebssicherheit beim Testen:** Beim Anschluss von Testgeräten, Entwicklerboards oder Peripherie muss die elektrische Unversehrtheit sichergestellt sein.
 * **Ausfallprävention:** Ordnungsgemäße Verkabelung verhindert Datenverluste, Netzwerkausfälle und Hardwareschäden durch versehentliches Herausziehen von Kabeln im laufenden Betrieb.
-
----
-
-## 6. Quellenverzeichnis
-
-* **S. Kersken:** *IT-Handbuch für Fachinformatiker*innen*, Rheinwerk Verlag.
-* **DGUV Vorschrift 3:** *Elektrische Anlagen und Betriebsmittel*, Deutsche Gesetzliche Unfallversicherung.
-* **DGUV Information 215-410:** *Ergonomie am Bildschirmarbeitsplatz*.
-* **VDE 0701-0702:** *Prüfung nach Instandsetzung, Änderung elektrischer Geräte - Wiederholungsprüfung*.
