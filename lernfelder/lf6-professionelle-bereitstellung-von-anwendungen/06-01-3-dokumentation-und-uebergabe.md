@@ -50,11 +50,4 @@ Ein Ticket darf niemals kommentarlos (z. B. nur mit dem Wort "Erledigt") geschlo
 * **Bug-Tracking und Versionierung:** Das Prinzip des qualifizierten Lösungstextes gilt analog für Commit-Messages und Pull-Requests. Ein "Bug fixed" reicht nicht – es muss dokumentiert werden, *welcher* Bug *wie* und in *welcher Version* behoben wurde.
 * **Sauberes On- und Offboarding:** Bei Entwicklerwechseln muss klar dokumentiert sein, wer Zugriff auf welche Produktivsysteme, Repositories und Hardware-Token hat, um diese rechtssicher entziehen zu können.
 
----
 
-## 6. Quellenverzeichnis
-
-* **S. Kersken:** *IT-Handbuch für Fachinformatiker*innen*, Rheinwerk Verlag.
-* **Wikipedia:** *Configuration Management Database (CMDB)* - Konzept der Configuration Items (CIs).
-* **Lendis GmbH:** *Muster-Übergabeprotokoll (Equipment Handover)* - Nachweise und Haftung.
-* **eesel.ai:** *ITSM-Ticketing Best Practices* - Dokumentation und Ticketabschluss.
