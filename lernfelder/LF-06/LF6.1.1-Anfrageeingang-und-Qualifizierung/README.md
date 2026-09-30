@@ -1,17 +1,8 @@
 # LF 6.1.1 – Anfrageeingang und Qualifizierung
-
 *Quelle & Grundlagen: IT-Handbuch für Fachinformatiker*innen (Sascha Kersken, Rheinwerk Verlag)*
 
----
 
-## 🎯 Lernziele
-* Unterscheidung zwischen **Störung (Incident)** und **Serviceanfrage (Service Request)**.
-* Zielgerichtete **Qualifizierung** von Meldungen mittels W-Fragen.
-* Korrekte **Priorisierung** anhand von Auswirkung (*Impact*) und Dringlichkeit (*Urgency*).
-
----
-
-## 🧠 Kernkonzepte (Kersken Basis)
+## Kernkonzepte (Kersken Basis)
 
 ### 1. Störung vs. Serviceanfrage (ITIL)
 * **Störung (Incident):** Ungeplante Unterbrechung oder Qualitätsminderung eines IT-Services (*"Die App stürzt beim Klick auf Speichern ab"*). 
@@ -39,7 +30,7 @@ Damit ein Ticket bzw. Bug-Report verarbeitet werden kann, müssen beim Anfrageei
 
 ---
 
-## 💻 Relevanz für die Anwendungsentwicklung (FIAE)
+## Relevanz für die Anwendungsentwicklung (FIAE)
 
 Warum ist Anfrageeingang und Qualifizierung für Softwareentwickler*innen wichtig?
 
@@ -57,7 +48,7 @@ Warum ist Anfrageeingang und Qualifizierung für Softwareentwickler*innen wichti
 
 ---
 
-## ⚠️ Typische Fallstricke in der Praxis
+## Typische Fallstricke in der Praxis
 
 * **Versteckte Feature-Wünsche:** Nutzer melden fehlende Funktionen oft als *"Fehler/Störung"*, um eine schnellere Bearbeitung zu erzwingen.
 * **Zuruf-Entwicklung vermeiden:** Code-Änderungen auf Zuruf im Flur am Ticket-System vorbei führen zu ungetesteten Versionen, fehlender Dokumentation und unklaren Code-Releases.
