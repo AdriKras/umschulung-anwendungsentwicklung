@@ -6,7 +6,7 @@ Im Rahmen des IT-Service-Managements (nach ITIL) ist der Service Desk die zentra
 
 ---
 
-## 2. ITIL-Kernbegriffe (AP1-relevantes Basiswissen)
+## 2. ITIL-Kernbegriffe 
 
 ### Störung (Incident)
 * **Definition:** Eine ungeplante Unterbrechung oder Qualitätsminderung eines IT-Services.
