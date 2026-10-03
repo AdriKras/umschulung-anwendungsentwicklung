@@ -63,9 +63,9 @@ class Kampf:
 
 
 t1 = team("adi", 10, 50)
-t2 = team("sam", 7, 50)
+t2 = team("CORE", 7, 50)
 g1 = gegner("miri", 10, 50)
 g2 = gegner("Koleidos", 3, 70)
 
-k = Kampf(t1, g2)
+k = Kampf(t1, g1)
 k.austragen()
