@@ -1080,5 +1080,3 @@ In der Praxis hilft dieses Wissen bei:
 
 
 ---
-
-hbar und sauber dokumentiert werden sollten.
