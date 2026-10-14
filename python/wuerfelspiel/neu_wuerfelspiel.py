@@ -172,5 +172,5 @@ if wahl_datei == "x":
 else:
     ("x für xml, sonst als json abgespeichert")
     with open("savegame.json", "w") as f:
-        json.dump(geladene_datei, f, indent=4)
+        json.dump(geladene_datei, f)
     print("Erfolgreich als savegame.json gespeichert!")
