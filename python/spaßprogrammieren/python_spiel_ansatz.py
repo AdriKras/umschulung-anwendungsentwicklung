@@ -24,10 +24,6 @@ class Kampf:
     def austragen(self):
         print(f"Der Kampf beginnt: {self.held.name} gegen {self.gegner.name}")
 
-        # Beide starten mit 100 HP
-        self.held.leben = 100
-        self.gegner.leben = 100
-
         runde = 1
 
         # Schleife läuft, solange BEIDE noch Leben haben
