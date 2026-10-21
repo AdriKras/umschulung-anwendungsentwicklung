@@ -29,7 +29,7 @@ class Kampf:
         while len(self.helden_team) > 0 and len(self.gegner_team) > 0:
             #   held = self.helden_team[0]
             #   gegner = self.gegner_team[0]
-            # Zufallsschaden berechnen
+            # Zufallsschaden berechnen, das gute muss ja immer gewinnen xD
             schaden_held = random.randint(1, 10)
             schaden_gegner = random.randint(1, 8)
 
