@@ -62,6 +62,7 @@ class Kampf:
             print(f"{self.gegner.name} hat gewonnen! -.-")
 
 
+t1 = input()
 t1 = team("adi", 10, 50)
 t2 = team("CORE", 7, 50)
 g1 = gegner("miri", 10, 50)

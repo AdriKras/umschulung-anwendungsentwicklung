@@ -23,10 +23,6 @@ class Kampf:
 
         print(f"Der Kampf beginnt: {held.name} gegen {gegner.name}")
 
-        # Beide starten mit 100 HP
-        # self.held.leben = 100
-        # self.gegner.leben = 100
-
         runde = 1
 
         # Schleife läuft, solange BEIDE noch Leben haben
