@@ -46,23 +46,26 @@ class Kampf:
             print(f"{gegner.name} greift an und macht {schaden_gegner} Schaden!")
             print(f"{held.name} hat noch {held.leben} HP.")
 
+            #  if gegner.leben <= 0 or held.leben <= 0
+            #     gegner = gegner 2 or held = held 2
+
             runde += 1
             time.sleep(1)
         # Gewinner verkünden
         print("KAMPFENDE")
         if held.leben > 0:
-            print(f"{held.name} hat gewonnen! <3")
+            print(f"{helden_team.name} hat gewonnen! <3")
         else:
-            print(f"{gegner.name} hat gewonnen! -.-")
+            print(f"{gegner_team.name} hat gewonnen! -.-")
 
 
-# t1 = input()
+t1 = input()
 t1 = character("adi", 10, 50)
 t2 = character("CORE", 7, 50)
 g1 = character("miri", 10, 50)
 g2 = character("Koleidos", 3, 70)
-helden_team = [t1, t2]
-gegner_team = [g1, g2]
+# helden_team = [t1, t2]
+# gegner_team = [g1, g2]
 
 k = Kampf(helden_team, gegner_team)
 # if t1 < 0 or g1 < 0:
