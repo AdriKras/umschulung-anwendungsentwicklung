@@ -185,7 +185,7 @@ class Kampf:
             schaden_held = random.randint(1, held.atk)
             monster.leben -= schaden_held
 
-            print(f"{held.name} trifft {monster.name} und fügt {schaden_held} zu")
+            print(f"{held.name} trifft {monster.name} und fügt {schaden_held} dmg zu")
 
             # Lebt das Monster noch?
 
@@ -210,13 +210,13 @@ class Kampf:
                 time.sleep(1)
                 continue
 
-        print(f"{monster.name} hat noch {monster.leben} HP")
+            print(f"{monster.name} hat noch {monster.leben} HP")
 
-        # Monster greift an
+            # Monster greift an
 
-        schaden_monster = random.randint(1, monster.atk)
-        held.leben -= schaden_monster
-        print(f"{monster.name} hat {schaden_monster} gemacht")
+            schaden_monster = random.randint(1, monster.atk)
+            held.leben -= schaden_monster
+            print(f"{monster.name} hat {schaden_monster} gemacht")
 
         # Lebt unser Held noch?
 
@@ -233,7 +233,6 @@ class Kampf:
         return len(self.helden_team) > 0
 
 
-# Testversuch
 held = Hero("Adri", atk=10, max_leben=50)
 helden_team = [held]
 
