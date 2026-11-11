@@ -191,15 +191,3 @@ Für technische Ansprechpartner stehen Architektur und Schnittstellen im Vorderg
 
 **Merksatz:** Eine gute IoT-Lösung ist sicher betreibbar, kontrolliert erweiterbar und für ihre Zielgruppe verständlich begründet.
 
----
-
-## Quellen zur fachlichen Vertiefung
-
-* [RFC 8446: TLS 1.3](https://www.rfc-editor.org/rfc/rfc8446.html)
-* [RFC 7568: Abschaffung von SSL 3.0](https://www.rfc-editor.org/rfc/rfc7568.html)
-* [Eclipse Mosquitto: Konfiguration, TLS und Authentisierung](https://mosquitto.org/man/mosquitto-conf-5.html)
-* [Espressif: Watchdogs](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/wdts.html)
-* [Espressif: OTA-Updates und Rollback](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/ota.html)
-* [NXP: I²C-Bus-Spezifikation](https://www.nxp.com/docs/en/user-guide/UM10204.pdf)
-* [Analog Devices: Introduction to SPI Interface](https://www.analog.com/en/resources/analog-dialogue/articles/introduction-to-spi-interface.html)
-
