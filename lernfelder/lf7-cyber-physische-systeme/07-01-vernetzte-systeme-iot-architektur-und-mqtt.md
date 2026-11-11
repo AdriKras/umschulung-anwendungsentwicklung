@@ -176,14 +176,5 @@ Anwendungsentwickler verbinden Gerätekommunikation mit verlässlicher Softwarev
 
 **Merksatz:** Eine IoT-Anwendung besteht aus dem Zusammenspiel von Geräten, Netzwerk und Software. Die Architektur muss sowohl zum Normalbetrieb als auch zum Verhalten bei Ausfällen passen.
 
----
 
-## Quellen zur fachlichen Vertiefung
-
-* [OASIS: MQTT Version 5.0](https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html)
-* [HiveMQ: MQTT Quality of Service](https://www.hivemq.com/blog/mqtt-essentials-part-6-mqtt-quality-of-service-levels/)
-* [LoRa Alliance: About LoRaWAN](https://lora-alliance.org/about-lorawan/)
-* [Bluetooth SIG: Technology Overview](https://www.bluetooth.com/learn-about-bluetooth/tech-overview/)
-* [Connectivity Standards Alliance: Zigbee](https://csa-iot.org/all-solutions/zigbee/)
-* [PROFIBUS & PROFINET International: PROFINET](https://www.profibus.com/profinet-technology)
 
