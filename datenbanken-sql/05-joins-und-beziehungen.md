@@ -4,7 +4,7 @@ In diesem Kapitel geht es um die Verknüpfung von Daten aus mehreren Tabellen mi
 
 In der Anwendungsentwicklung werden Datenmodelle bewusst in mehrere normalisierte Tabellen aufgeteilt (Separation of Concerns). Um im Backend zusammengesetzte Objekte (z. B. eine Bestellung inklusive Kundendaten und Bestellpositionen) für das Frontend aufzubereiten, müssen diese Daten über SQL-Joins performant zusammengeführt werden.
 
-Für Fachinformatiker für Anwendungsentwicklung (FIAE) ist das Verständnis von Joins essenziell, um komplexe Data Transfer Objects (DTOs) zu befüllen, ORM-Abfragen (wie SQLAlchemy oder Entity Framework) zu durchschauen und Performanz-Probleme wie das berichtigte **N+1 Query-Problem** zu vermeiden.
+Für Fachinformatiker für Anwendungsentwicklung (FIAE) ist das Verständnis von Joins essenziell, um komplexe Data Transfer Objects (DTOs) zu befüllen, ORM-Abfragen (wie SQLAlchemy oder Entity Framework) zu durchschauen und Performance-Probleme wie das berichtigte **N+1 Query-Problem** zu vermeiden.
 
 ---
 
