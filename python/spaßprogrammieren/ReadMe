@@ -4,7 +4,7 @@ Hier wurden Elemente aus dem Würfelspiel übernommen. Die Überlegung war, dass
 Die erste Idee, war es mit random integer unterschiedliche Schäade ausgeben zu lassen. Dann für den Kampf werden mindestens 2 Akteure gebraucht. Dann konnte ich die Group Methode mit __init__ anwenden.
 Zu erst hatte das Spiel nur mich und eine andere Mitschülerin. Da es mein Spiel war, habe ich ein wenig geschummelt und habe meinen Charakter stärker gemacht als ihren, in dem ich meine Range von 1 - 10 und ihre nur von 1 - 7 definiert habe. 
 
-Dadurch, dass die Groups definiert wurden und die Charaktere alle gleich vom Aufbau sind, konnte man zu die erste Gruppe von Helden, für die Feinde einfach kopieren. 
+Dadurch, dass die classes definiert wurden und die Charaktere alle gleich vom Aufbau sind, konnte man zu die erste class von Helden, für die Feinde einfach kopieren. 
 
 Dann habe ich weitere Gruppen für Waffen erstellt, die einen Einfluss aif die Werte des Helden haben. Da musste ich dann von Waffen die den Angriff stärken, mit Rüstung die deen Verteidigung stärken unterscheiden. 
 Habe 3 unterschiedliche Hauptmonster in den Quelltext hinzugefügt.
